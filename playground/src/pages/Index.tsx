@@ -6,6 +6,7 @@ import AboutPage from "@/pages/AboutPage";
 import ContactPage from "@/pages/ContactPage";
 import SubscribePage from "@/pages/SubscribePage";
 import FeaturedPage from "@/pages/FeaturedPage";
+import ZenPlannerPage from "@/pages/Zen-planner";
 
 const Index = () => {
   const [page, setPage] = useState("home");
@@ -26,6 +27,8 @@ const Index = () => {
         <SubscribePage />
       ) : page === "featured" ? (
         <FeaturedPage />
+      ) : page === "zen-planner" ? (
+        <ZenPlannerPage />
       ) : (
         <HomePage />
       )}
